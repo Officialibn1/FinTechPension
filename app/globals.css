@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply max-w-7xl mx-auto;
+  @apply max-w-[1832px] mx-auto;
 }
 
 nav {
@@ -30,9 +30,67 @@ nav {
 }
 
 nav .navLinks ul{
-  @apply flex gap-4 ;
+  @apply flex gap-6 ;
+}
+
+nav .navLinks ul a{
+  @apply hover:underline
 }
 
 .contactUs button {
-  @apply btn outline outline-slate-800 outline-1 rounded-3xl hover:bg-slate-800 hover:text-stone-200;
+  @apply btn outline  outline-1 rounded-3xl hover:bg-slate-800 hover:text-stone-200;
 }
+
+/* Header styles */
+
+header {
+  @apply flex flex-col-reverse lg:flex-row gap-5  w-full px-[10vw] pb-6 pt-10 justify-between bg-stone-200;
+}
+
+.headerText {
+  @apply flex flex-col mx-auto;
+}
+
+.headerText h1 {
+  @apply  text-3xl w-full md:w-3/4 leading-relaxed xl:text-5xl
+}
+
+.headerText p {
+  @apply mt-auto text-2xl w-3/5 font-thin
+}
+
+.headerButtons {
+  @apply flex gap-6 mb-20 mt-10
+}
+
+.headerButtons button {
+  @apply btn outline rounded-3xl outline-1 md:hover:bg-slate-800 md:hover:text-stone-200
+}
+
+.headerImage {
+  @apply h-full relative mx-auto;
+}
+
+.headerImage .headerRates {
+  @apply bg-slate-100 p-4 w-[250px] rounded-md text-slate-800 absolute -left-10 lg:-left-20;
+}
+
+.headerImage .headerRates h1 {
+  @apply text-xl font-semibold
+}
+
+.headerImage .headerRates p {
+  @apply text-sm font-light
+}
+
+.headerImage .headerRates:first-child {
+  @apply top-32
+}
+
+.headerImage .headerRates:last-of-type {
+  @apply top-56
+}
+
+
+
+
