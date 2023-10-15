@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('./components/styles/Convert.css');
+
 * {
   padding: 0;
   margin: 0;
@@ -30,7 +32,7 @@ nav {
 }
 
 nav .navLinks ul{
-  @apply flex gap-6 ;
+  @apply hidden md:flex gap-6 ;
 }
 
 nav .navLinks ul a{
@@ -38,7 +40,7 @@ nav .navLinks ul a{
 }
 
 .contactUs button {
-  @apply btn outline  outline-1 rounded-3xl hover:bg-slate-800 hover:text-stone-200;
+  @apply btn outline text-xs md:text-lg outline-1 rounded-3xl hover:bg-slate-800 hover:text-stone-200;
 }
 
 /* Header styles */
@@ -56,7 +58,7 @@ header {
 }
 
 .headerText p {
-  @apply mt-auto text-2xl w-3/5 font-thin
+  @apply mt-auto text-2xl md:w-4/5 font-thin
 }
 
 .headerButtons {
@@ -79,8 +81,8 @@ header {
   @apply text-xl font-semibold
 }
 
-.headerImage .headerRates p {
-  @apply text-sm font-light
+.headerImage .headerRates p { 
+  @apply text-sm font-light 
 }
 
 .headerImage .headerRates:first-child {
