@@ -1,0 +1,43 @@
+.financialAdvisors {
+    @apply flex flex-col gap-10 px-[10vw] bg-slate-100 py-8;
+}
+
+.advisorsText {
+    @apply flex flex-col gap-5 w-full items-center
+}
+
+.advisorsText h1 {
+  @apply  text-3xl w-full md:w-3/4 leading-relaxed xl:text-5xl text-center
+}
+
+.advisorsText p {
+    @apply mt-auto text-xl md:w-4/5 font-thin w-full text-center
+}
+
+/* The cars styles for financial advisors */
+.advisorsCardsContainer {
+    @apply flex flex-col gap-5 w-full 
+}
+
+.advisorsCardsContainer .acvisorsCard {
+    @apply w-full rounded-lg bg-stone-200 px-5 py-3 flex flex-col gap-3 lg:flex-row lg:rounded-full lg:items-center 
+}
+
+.advisorsCardsContainer .acvisorsCard h1 {
+    @apply text-xl font-normal lg:flex-1
+}
+
+.advisorsCardsContainer .acvisorsCard p {
+    @apply text-base font-light lg:flex-1
+}
+
+.advisorsCardsContainer .acvisorsCard button {
+    @apply bg-slate-100 rounded-full w-fit outline-none p-3 text-xl ml-auto h-fit lg:hover:bg-slate-800 lg:hover:text-slate-100
+}
+
+
+
+
+
+
+
