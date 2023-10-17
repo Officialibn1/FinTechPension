@@ -1,5 +1,5 @@
 .financialAdvisors {
-    @apply flex flex-col gap-10 px-[10vw] bg-slate-100 py-8;
+    @apply flex flex-col gap-10 px-[10vw] bg-slate-100 py-20;
 }
 
 .advisorsText {
@@ -7,7 +7,7 @@
 }
 
 .advisorsText h1 {
-  @apply  text-3xl w-full md:w-3/4 leading-relaxed xl:text-5xl text-center
+  @apply  text-3xl w-full md:w-3/4 leading-relaxed xl:text-4xl text-center
 }
 
 .advisorsText p {

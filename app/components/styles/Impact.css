@@ -1,0 +1,31 @@
+.impactContainer {
+    @apply gap-10 px-[10vw] bg-stone-200 py-20;
+}
+
+.impact {
+    @apply flex flex-col gap-5 w-full items-center bg-slate-100 rounded-lg px-5 md:px-8 py-10
+}
+
+.impact h1 {
+  @apply  text-2xl w-full md:w-3/4 leading-relaxed xl:text-4xl text-center
+}
+
+.impactRates {
+    @apply w-full flex justify-between max-w-2xl mx-auto mt-12;
+}
+
+.impactRate {
+    /* @apply  */
+}
+
+.impactRate h1 {
+    @apply text-3xl font-medium
+}
+
+.impactRate p {
+    @apply text-sm font-thin;
+}
+
+
+
+

@@ -1,5 +1,5 @@
 .convertKnowledge {
-    @apply bg-stone-200 py-10 w-full px-[10vw] flex flex-col md:flex-row gap-5;
+    @apply bg-stone-200 pt-10 pb-20 w-full px-[10vw] flex flex-col md:flex-row gap-5;
 }
 
 .convertKnowledgeLeft {

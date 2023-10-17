@@ -1,3 +1,4 @@
+// Type of advice for the advice sections
 type Advice = {
     id: string,
     title: string,
@@ -5,6 +6,14 @@ type Advice = {
     link?: string
 }
 
+// Type of impact for the impact section
+type Impact = {
+    id: string,
+    amount: number,
+    text: string
+}
+
+// Impacts data
 export const adviceCards: Advice[] = [
     {
         id: '1',
@@ -27,3 +36,27 @@ export const adviceCards: Advice[] = [
         desc: 'Our seasoned advisors work closely with you to understand your unique financial objectives, risk tolerance and preferences.'
     }
 ]
+
+export const impacts: Impact[] = [
+    {
+        id: '1',
+        amount: 284,
+        text: 'Employees'
+    },
+    {
+        id: '2',
+        amount: 42,
+        text: 'Years'
+    },
+    {
+        id: '3',
+        amount: 38,
+        text: 'Cities'
+    },
+    {
+        id: '4',
+        amount: 17,
+        text: 'Countries'
+    }
+]
+
