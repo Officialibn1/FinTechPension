@@ -12,7 +12,7 @@ const MobileNav = () => {
 
 
   return (
-    <div className='mobileNavbarContainer'>
+    <div className={`mobileNavbarContainer ${showNav ? '' : 'overflow-x-hidden'}`}>
         <div className={`mobileNavbar ${showNav ? 'right-0' : ' -right-96'}`}>
             <ul>
                 <li><Link onClick={() => setShowNav(false)} href={`/`}>Home</Link></li>

@@ -113,7 +113,7 @@ header {
 
 /* Mobile navbar styles */
 .mobileNavbarContainer {
-  @apply relative md:hidden;
+  @apply relative md:hidden ;
 }
 
 .mobileNavbar {
