@@ -21,7 +21,7 @@ footer {
 .footerLinks {
     @apply flex flex-wrap gap-6 mt-10 md:flex-row;
     /* media quaries */
-    @apply md:gap-4 items-center lg:gap-10 
+    @apply md:gap-4 items-center lg:gap-10;
 }
 
 .footerLinks ul {
@@ -29,6 +29,27 @@ footer {
     /* media quaries */
     @apply lg:max-w-[150px];
 }
+
+.footerLinks ul li a {
+    position: relative;
+}
+
+.footerLinks ul li a::before {
+    @apply bg-slate-800 rounded-sm;
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    transition: width 250ms ease-in;
+}
+
+.footerLinks ul li a:hover:before {
+    width: 100%;
+}
+
+
 
 .newsLetter {
     @apply w-full mt-10 max-w-[340px];
@@ -52,8 +73,9 @@ footer {
 }
 
 
+/* Footer Icons styles */
 .footerIcons {
-    @apply flex justify-between items-center bg-slate-800 text-slate-200 px-[5vw] py-5;
+    @apply flex justify-between items-center bg-slate-800 text-slate-200 px-[5vw] py-3;
 }
 
 .footerIcons span {

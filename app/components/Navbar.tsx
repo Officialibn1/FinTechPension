@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { GrTechnology } from "react-icons/gr";
+import MobileNav from './MobileNav';
 
 const Navbar = () => {
   return (
@@ -22,6 +23,8 @@ const Navbar = () => {
         <div className="contactUs">
             <button>Contact Us</button>
         </div>
+
+        <MobileNav />
     </nav>
   )
 }

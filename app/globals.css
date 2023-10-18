@@ -12,7 +12,7 @@
 }
 
 body {
-  @apply max-w-[1832px] mx-auto;
+  @apply max-w-[1832px] mx-auto text-slate-800;
 }
 
 nav {
@@ -32,15 +32,32 @@ nav {
 }
 
 nav .navLinks ul{
-  @apply hidden md:flex gap-6 ;
+  @apply hidden md:flex gap-6 font-normal;
 }
 
-nav .navLinks ul a{
-  @apply hover:underline
+nav .navLinks ul a {
+  position: relative;
 }
+
+nav .navLinks ul a::before {
+  @apply bg-slate-800 rounded-sm;
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  transition: width 250ms ease-in;
+}
+
+nav .navLinks ul a:hover:before {
+  width: 100%;
+}
+
+
 
 .contactUs button {
-  @apply btn outline text-xs md:text-sm outline-1 rounded-3xl hover:bg-slate-800 hover:text-stone-200;
+  @apply btn outline text-xs md:text-sm outline-1 rounded-3xl hover:bg-slate-800 hover:text-stone-200 hidden md:block;
 }
 
 /* Header styles */
@@ -94,5 +111,21 @@ header {
 }
 
 
+/* Mobile navbar styles */
+.mobileNavbarContainer {
+  @apply relative md:hidden;
+}
+
+.mobileNavbar {
+  @apply absolute top-20 bg-stone-200 z-10 px-8 py-5 w-48 h-80 rounded-bl-xl duration-300 md:hidden;
+}
+
+.mobileNavbar ul {
+  @apply flex flex-col gap-3 h-full font-normal
+}
+
+.mobileContactUs button{
+  @apply  outline text-base-100 outline-1 rounded-3xl mt-14 px-3 py-2;
+}
 
 
