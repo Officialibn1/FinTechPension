@@ -6,7 +6,7 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 
 const FinancialAdvisors = () => {
   return (
-    <section className='financialAdvisors'>
+    <section className='financialAdvisors' id='services'>
         <div className="advisorsText">
             <h1>
                 Making the most of our financial advisors&apos; real-world know-how.

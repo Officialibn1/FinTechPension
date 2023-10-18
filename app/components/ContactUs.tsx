@@ -12,7 +12,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 
 const ContactUs = () => {
   return (
-    <section className='contactUsContainer'>
+    <section className='contactUsContainer' id='contactUs'>
         <div className="contactUsWrapper">
             {/* Contact us div */}
             <div className="contactUsLinks">

@@ -1,5 +1,5 @@
 footer {
-    @apply px-[10vw] bg-stone-200 py-20 flex flex-col
+    @apply px-[10vw] bg-stone-200 pt-20 flex flex-col
 }
 
 .footerHeading {
@@ -19,6 +19,21 @@ footer {
 }
 
 
+
+
+
+
+.footerIcons {
+    @apply flex justify-between items-center bg-slate-800 text-slate-200 px-[5vw] py-5;
+}
+
+.footerIcons span {
+    @apply text-base font-thin
+}
+
+.footerIconsSocials {
+    @apply flex gap-5 text-2xl
+}
 
 
 
