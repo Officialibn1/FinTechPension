@@ -1,5 +1,5 @@
 footer {
-    @apply px-[10vw] bg-stone-200 pt-20 flex flex-col
+    @apply px-[10vw] bg-stone-200 py-20 flex flex-col
 }
 
 .footerHeading {
@@ -18,9 +18,38 @@ footer {
     @apply text-2xl text-center font-light
 }
 
+.footerLinks {
+    @apply flex flex-wrap gap-6 mt-10 md:flex-row;
+    /* media quaries */
+    @apply md:gap-4 items-center lg:gap-10 
+}
 
+.footerLinks ul {
+    @apply min-w-[130px] flex flex-col gap-2 text-base;
+    /* media quaries */
+    @apply lg:max-w-[150px];
+}
 
+.newsLetter {
+    @apply w-full mt-10 max-w-[340px];
+    /* media quaries */
+    @apply md:ml-auto xl:mt-0
+}
 
+.newsLetter h3 {
+    @apply text-xl mb-3 font-normal
+}
+
+.newsLetter .inputWrapper {
+    @apply flex items-center outline outline-1 rounded-xl outline-slate-500;
+}
+
+.newsLetter .inputWrapper input {
+    @apply px-5 py-5 flex-[7] bg-transparent outline-none
+}
+.newsLetter .inputWrapper span  {
+    @apply flex-1 text-2xl ml-3 font-bold
+}
 
 
 .footerIcons {

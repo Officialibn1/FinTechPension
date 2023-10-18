@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/Footer.css'
 import { GrTechnology } from 'react-icons/gr'
+import { FaAngleRight } from "react-icons/fa6";
 import Link from 'next/link'
 
 const Footer = () => {
@@ -56,7 +57,10 @@ const Footer = () => {
                     Stay informed with our newsletter
                 </h3>
 
-                <input type="email" name="newsEmail" id="newsEmail" />
+                <div className="inputWrapper">
+                    <input type="email" name="newsEmail" id="newsEmail" placeholder='Your Email Address' />
+                    <span><FaAngleRight /></span>
+                </div>
             </div>
         </div>
 
