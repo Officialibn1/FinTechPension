@@ -1,4 +1,5 @@
 import FinancialAdvisors from "./components/Advisors";
+import ContactUs from "./components/ContactUs";
 import ConvertKnowledge from "./components/Convert";
 import Header from "./components/Header";
 import Impact from "./components/Impact";
@@ -16,6 +17,8 @@ export default function Home() {
       <Impact />
 
       <Insights />
+
+      <ContactUs />
     </main>
   )
 }

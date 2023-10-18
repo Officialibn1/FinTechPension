@@ -1,0 +1,65 @@
+.contactUsContainer {
+    @apply gap-10 px-[10vw] bg-slate-100 py-20;
+}
+
+.contactUsWrapper {
+    @apply flex flex-col gap-20 w-full bg-stone-200 rounded-lg px-5 md:px-8 py-10 lg:flex-row
+}
+
+/* Contact us styles */
+.contactUsLinks {
+    @apply  flex flex-col gap-5 w-full lg:flex-1; 
+}
+
+.contactUsLinks h1 {
+    @apply text-4xl font-normal
+}
+
+.contactUsCard {
+    @apply flex items-center gap-3 
+}
+
+.contactUsCard svg {
+    @apply text-3xl
+}
+
+.contactUsCard a {
+    @apply text-lg font-light
+}
+
+.contactUsCard p {
+    @apply text-sm font-extralight
+}
+
+.contactForm {
+    @apply w-full lg:flex-[2];
+}
+
+.contactForm form {
+    @apply w-full flex flex-col gap-5
+}
+
+.inputContainer {
+    @apply w-full flex flex-col gap-1 outline outline-1 outline-slate-800 rounded-xl py-3 px-4
+}
+
+.inputContainer label {
+    @apply text-sm font-extralight
+}
+
+.inputContainer input {
+    @apply py-3 bg-transparent outline-none text-lg 
+}
+
+.inputContainer textarea {
+    @apply py-3 bg-transparent outline-none text-lg min-h-[128px]
+}
+
+.contactForm form button {
+    @apply btn rounded-full bg-slate-800 text-slate-200 lg:hover:bg-stone-200 lg:hover:text-slate-800 
+}
+
+
+
+
+

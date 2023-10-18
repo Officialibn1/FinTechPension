@@ -1,0 +1,25 @@
+footer {
+    @apply px-[10vw] bg-stone-200 py-20 flex flex-col
+}
+
+.footerHeading {
+    @apply flex flex-col items-center gap-5
+}
+
+.footerHeading .logo svg {
+    @apply text-6xl
+}
+
+.footerHeading .logo span {
+    @apply text-4xl
+}
+
+.footerHeading h2 {
+    @apply text-2xl text-center font-light
+}
+
+
+
+
+
+
