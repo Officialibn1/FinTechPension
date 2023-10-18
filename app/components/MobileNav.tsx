@@ -27,7 +27,7 @@ const MobileNav = () => {
             </ul>
         </div>
 
-        <span className='mobileNavBtn md:hidden z-20' >
+        <span className='mobileNavBtn md:hidden z-20'>
             <label className="btn btn-circle swap swap-rotate" >
                 
                 {/* this hidden checkbox controls the state */}

@@ -8,7 +8,7 @@ import FooterIcons from './components/FooterIcons'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Next Auth',
+  title: 'FinTech',
   description: 'Designed IbnDev',
 }
 
